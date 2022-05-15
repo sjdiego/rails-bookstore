@@ -1,0 +1,12 @@
+<div class="container mx-auto">
+    <header class="p-4">
+        <h1 class="text-center text-2xl">Library Application</h1>
+    </header>
+
+    <section class="p-4 mx-auto max-w-lg">
+        <div class="grid grid-cols-2">
+            <%= link_to "List", list_books_path, class: "rounded-full text-center text-white p-2 m-2 transition duration-150 bg-blue-600 hover:bg-blue-400" %>
+            <%= link_to "Add", add_book_path, class: "rounded-full text-center text-white p-2 m-2 transition duration-150 bg-green-600 hover:bg-green-400" %>
+        </div>
+    </section>
+</div>

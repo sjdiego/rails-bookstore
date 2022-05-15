@@ -1,0 +1,6 @@
+<% flash.each do |type, msg| %>
+  <div class="<%= flash_class(type).to_s %>" role="alert">
+    <p class="font-bold"><%= type.capitalize  %></p>
+    <p class="text-sm"><%= msg %></p>
+  </div>
+<% end %>

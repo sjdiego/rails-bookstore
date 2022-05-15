@@ -1,0 +1,13 @@
+<header class="p-4">
+  <h1 class="text-2xl">Add book</h1>
+</header>
+
+<%= render partial: "shared/flash", locals: {flash: flash} %>
+
+<section class="p-4">
+  <%= render partial: 'forms/book', locals: {book: nil, path: create_book_path} %>
+</section>
+
+<div class="p-4">
+  <%= render partial: "buttons/back", locals: {title: "Back to List", url: list_books_path } %>
+</div>

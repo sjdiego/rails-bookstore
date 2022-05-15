@@ -1,0 +1,29 @@
+<%= form_with :url => path do |form| %>
+  <%= form.label :title, class: "block text-gray-700 text-sm font-bold mb-2" %>
+  <%= 
+    form.text_field :title, 
+    value: book ? book.title : '',
+    placeholder: "Type the Title of the book", 
+    class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+  %>
+
+  <%= form.label :category, class: "block text-gray-700 text-sm font-bold mb-2" %>
+  <%= 
+    form.text_field :category, 
+    value: book ? book.category : '',
+    placeholder: "Type the Category of the book", 
+    class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+  %>
+
+  <%= form.label :year, class: "block text-gray-700 text-sm font-bold mb-2" %>
+  <%= 
+    form.text_field :year, 
+    value: book ? book.year : '',
+    placeholder: "Type the Year of the book", 
+    class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+  %>
+
+  <div class="flex items-center justify-between my-4">
+    <%= form.submit class: "rounded-full text-center text-white p-2 transition duration-150 bg-green-600 hover:bg-green-400" %>
+  </div>
+<% end %>
